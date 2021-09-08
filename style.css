@@ -143,6 +143,10 @@ nav {
 
 .modal-body {
   padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
 }
 
 #overlay {
