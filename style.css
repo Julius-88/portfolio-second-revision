@@ -63,7 +63,11 @@
 }
 
 #firstCard {
-  background-image: url("https://usercontent.one/wp/switchbloggen.se/wp-content/uploads/2019/09/FF8-logo.jpg");
+  background-image: url("./images/profile.jpg");
+}
+
+.about {
+  color: white;
 }
 
 nav {
@@ -160,7 +164,52 @@ nav {
 }
 
 /* Button */
+
+/* :root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+} */
+
+.button-body {
+  /* background: green; */
+  color: rgb(210, 105, 30);
+  border-radius: 25px;
+  box-shadow: inset 0 0 1em 0 rgb(210, 105, 30), 0 0 1em 0 rgb(210, 105, 30);
+}
+
 .contact {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  /* border: blue 0.125em solid; */
+  border-radius: 0.4em;
+  border-style: none;
+  padding: 0.25em 0.3em;
+  background-color: black;
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(244, 164, 96);
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 7px rgb(176, 196, 222), 0 0 10px rgb(176, 196, 222),
+      0 0 21px rgb(176, 196, 222), 0 0 42px rgb(70, 130, 180),
+      0 0 82px rgb(70, 130, 180), 0 0 92px rgb(70, 130, 180),
+      0 0 102px rgb(70, 130, 180), 0 0 151px rgb(70, 130, 180);
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+/* .contact {
   cursor: pointer;
   outline: none;
   color: #fff;
@@ -179,4 +228,4 @@ nav {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
+} */
