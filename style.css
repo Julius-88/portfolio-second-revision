@@ -73,15 +73,19 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
   font-size: 14px;
+  display: flex;
+  align-items: flex-end;
 }
+
 .about p {
   display: flex;
-  flex-direction: inherit;
+  flex-direction: column;
   justify-content: space-around;
   padding: 20px 10px;
   height: 95%;
   color: white;
   overflow: hidden;
+  bottom: 0;
 }
 nav {
   display: flex;
