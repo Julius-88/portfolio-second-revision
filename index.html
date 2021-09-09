@@ -47,10 +47,7 @@
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            <form
-              action="https://formsubmit.co/julius.soltani@gmail.com"
-              method="POST"
-            >
+            <form name="contact" data-netlify="true" method="POST">
               <input type="text" name="_honey" style="display: none" />
               <input type="text" name="name" required placeholder="Your Name" />
 
@@ -62,11 +59,11 @@
               />
               <br />
               <br />
-              <input
+              <!-- <input
                 type="hidden"
                 name="_next"
                 value="https://julius-soltani.netlify.app/thankyou.html"
-              />
+              /> -->
               <textarea
                 name="message"
                 id="message"
@@ -138,3 +135,5 @@
     <script src="/script.js"></script>
   </body>
 </html>
+
+<!-- action="https://formsubmit.co/julius.soltani@gmail.com" -->
