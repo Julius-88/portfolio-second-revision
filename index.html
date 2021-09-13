@@ -38,40 +38,43 @@
       <div>
         <div class="button-body">
           <button data-modal-target="#modal" class="contact">
-            Contact Info
+            Contact Me!
           </button>
         </div>
         <div class="modal" id="modal">
           <div class="modal-header">
-            <div class="title">Contact Me!</div>
+            <div class="contact-two">Contact Me!</div>
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
             <form name="contact" data-netlify="true" method="POST">
-              <input type="text" name="_honey" style="display: none" />
-              <input type="text" name="name" required placeholder="Your Name" />
+              <input
+                type="text"
+                class="name"
+                name="name"
+                required
+                placeholder="Your Name"
+              />
 
               <input
                 type="email"
                 name="email"
+                class="email"
                 required
                 placeholder="Email Address"
               />
               <br />
               <br />
-              <!-- <input
-                type="hidden"
-                name="_next"
-                value="https://julius-soltani.netlify.app/thankyou.html"
-              /> -->
+
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
+                placeholder="Write your text here"
               ></textarea>
               <br />
-              <button type="submit">Send</button>
+              <button type="submit" class="second-button">Send</button>
             </form>
           </div>
         </div>
@@ -80,10 +83,7 @@
     </nav>
     <div class="container">
       <div id="firstCard" class="panel active">
-        <!-- <a href="/pagetwo.html">
-          <h3 class="about">Click here to find out more about me!</h3>
-        </a> -->
-        <div class="about">
+        <div class="content">
           <p>
             Hi there! My name is Julius and I am a junior front-end developer
             living in Stockholm, Sweden. <br />
@@ -110,7 +110,9 @@
           background-image: url('https://usercontent.one/wp/switchbloggen.se/wp-content/uploads/2019/09/FF8-logo.jpg');
         "
       >
-        <h3>Explore Final Fantasy 8 Remastered</h3>
+        <div class="content">
+          <h3>Explore Final Fantasy 8 Remastered</h3>
+        </div>
       </div>
 
       <div
@@ -119,7 +121,9 @@
           background-image: url('https://www.gannett-cdn.com/-mm-/ca90b2edf58f4081429715d837ea2a5431062f4f/c=290-0-1631-1008/local/-/media/2017/10/06/Reno/RGJ/636429102643416469-Final-Fantasy-XI.jpg?quality=50&width=640');
         "
       >
-        <h3>Explore Final Fantasy 9 Remastered</h3>
+        <div class="content">
+          <h3>Explore Final Fantasy 9 Remastered</h3>
+        </div>
       </div>
 
       <div
@@ -128,7 +132,9 @@
           background-image: url('https://switchplayer.net/wp-content/uploads/2019/04/H2x1_NSwitch_FinalFantasyXX2HDRemaster_image1600w.jpg');
         "
       >
-        <h3>Explore Final Fantasy X and X-2</h3>
+        <div class="content">
+          <h3>Explore Final Fantasy X and X-2</h3>
+        </div>
       </div>
     </div>
 
@@ -136,4 +142,14 @@
   </body>
 </html>
 
+<!-- codes that work only if im using formsubmit, saving for future customization -->
 <!-- action="https://formsubmit.co/julius.soltani@gmail.com" -->
+<!-- <input type="text" name="_honey" style="display: none" /> -->
+<!-- <a href="/pagetwo.html">
+          <h3 class="about">Click here to find out more about me!</h3>
+        </a> -->
+<!-- <input
+                type="hidden"
+                name="_next"
+                value="https://julius-soltani.netlify.app/thankyou.html"
+              /> -->

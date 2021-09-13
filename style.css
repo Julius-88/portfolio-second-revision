@@ -34,6 +34,15 @@
   transition: flex 0.7s ease-in;
 }
 
+.content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
 .panel h3 {
   font-size: 24px;
   position: absolute;
@@ -43,41 +52,7 @@
   opacity: 0;
 }
 
-.panel.active {
-  flex: 5;
-}
-
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
-
-  .panel:nth-of-type(4) {
-    display: none;
-  }
-}
-
-#firstCard {
-  background-image: url("./images/profile.jpg");
-}
-
-.about {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.about p {
+.content p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -86,7 +61,34 @@
   color: white;
   overflow: hidden;
   bottom: 0;
+  opacity: 0;
 }
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+.panel.active p {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+#firstCard {
+  background-image: url("./images/profile.jpg");
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -100,10 +102,16 @@ nav {
   height: 50px;
   margin: 10px;
 }
+#linkedin:hover {
+  vertical-align: bottom;
+}
 #github {
   width: 50px;
   height: 50px;
   margin: 10px;
+}
+#github:hover {
+  vertical-align: middle;
 }
 
 /*Title animation*/
@@ -116,6 +124,12 @@ nav {
   line-height: 0.75;
   margin: 10px 0;
 }
+/* @keyframes pulsate {
+  50% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09,
+      0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09;
+  }
+} */
 
 /* Modal CSS */
 .modal {
@@ -166,6 +180,45 @@ nav {
   font-style: italic;
 }
 
+.contact-two {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.name {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.email {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+#message {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  max-width: 100%;
+  width: 100%;
+}
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+.second-button {
+  padding: 5px 30px;
+  border-radius: 10px;
+  background: none;
+  transition: 0.8s;
+}
+.second-button:hover {
+  background: rgb(10, 73, 18);
+  color: white;
+}
+
 #overlay {
   position: fixed;
   opacity: 0;
@@ -196,6 +249,10 @@ nav {
   color: rgb(210, 105, 30);
   border-radius: 25px;
   box-shadow: inset 0 0 1em 0 rgb(210, 105, 30), 0 0 1em 0 rgb(210, 105, 30);
+}
+
+.button-body:hover {
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
 }
 
 .contact {
