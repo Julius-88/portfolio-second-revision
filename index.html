@@ -48,22 +48,24 @@
           </div>
           <div class="modal-body">
             <form name="contact" data-netlify="true" method="POST">
-              <input
-                type="text"
-                class="name"
-                name="name"
-                required
-                placeholder="Your Name"
-              />
+              <div class="labels">
+                <input
+                  type="text"
+                  class="name"
+                  name="name"
+                  required
+                  placeholder="Your Name"
+                />
 
-              <input
-                type="email"
-                name="email"
-                class="email"
-                required
-                placeholder="Email Address"
-              />
-              <br />
+                <input
+                  type="email"
+                  name="email"
+                  class="email"
+                  required
+                  placeholder="Email Address"
+                />
+              </div>
+
               <br />
 
               <textarea
@@ -74,7 +76,9 @@
                 placeholder="Write your text here"
               ></textarea>
               <br />
-              <button type="submit" class="second-button">Send</button>
+              <div class="button-padding">
+                <button type="submit" class="second-button">Send</button>
+              </div>
             </form>
           </div>
         </div>

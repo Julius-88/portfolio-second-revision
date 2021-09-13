@@ -188,10 +188,15 @@ nav {
 .name {
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
 }
 .email {
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+:placeholder-shown {
+  text-align: center;
 }
 #message {
   border: none;
@@ -201,6 +206,7 @@ nav {
 }
 textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
 }
 textarea:focus {
   outline: none;
@@ -208,17 +214,27 @@ textarea:focus {
 input:focus {
   outline: none;
 }
+.labels {
+  padding: 0px 50px;
+}
 .second-button {
   padding: 5px 30px;
   border-radius: 10px;
   background: none;
   transition: 0.8s;
+  color: aliceblue;
 }
 .second-button:hover {
   background: rgb(10, 73, 18);
   color: white;
 }
+.button-padding {
+  padding-left: 11em;
+}
 
+.modal {
+  animation: bgcolor 20s infinite alternate;
+}
 #overlay {
   position: fixed;
   opacity: 0;
@@ -287,6 +303,27 @@ input:focus {
     text-shadow: none;
   }
 }
+@keyframes bgcolor {
+  0% {
+    background-color: aliceblue;
+  }
+  20% {
+    background-color: rgb(13, 99, 175);
+  }
+  40% {
+    background-color: rgb(61, 21, 155);
+  }
+  60% {
+    background-color: rgb(134, 24, 161);
+  }
+  80% {
+    background-color: rgb(194, 29, 29);
+  }
+  100% {
+    background-color: rgb(78, 211, 26);
+  }
+}
+
 /* .contact {
   cursor: pointer;
   outline: none;
@@ -306,4 +343,4 @@ input:focus {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-} */
+} */ ;
