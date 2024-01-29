@@ -165,7 +165,7 @@
 }
 
 #secondCard {
-  background-image: url("./images/skrivbordtre.jpeg");
+  background-image: url("./images/background.png");
 }
 
 nav {
@@ -422,4 +422,4 @@ input:focus {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-} */ ;
+} */
